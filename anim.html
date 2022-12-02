@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            height: 50px;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .left-header {
+            flex: 50%;
+            text-align: center;
+        }
+
+        .right-header {
+            flex: 50%;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        li {
+            display: inline;
+            margin-left: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: azure;
+            font-size: 20px;
+        }
+
+        a:hover {
+            background-color: azure;
+            color: red;
+            transition: 5s all;
+        }
+
+        nav {
+            background-color: blueviolet;
+            height: 80px;
+        }
+
+        h1 {
+            color: azure;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        .left-nav {
+            flex: 25%;
+        }
+
+        .right-nav {
+            flex: 75%;
+            margin-right: 600px;
+        }
+
+        .right-nav ul {
+            margin-top: 25px;
+        }
+
+        .btn2 {
+            display: none;
+            margin-left: 250px;
+        }
+
+        .btn1:hover .btn2 {
+            display: block;
+            position: absolute;
+        }
+
+        footer {
+            display: flex;
+            height: 600px;
+            width: 100%;
+            background-color: blue;
+            padding: ;
+        }
+
+        .f1 {
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="left-header">
+                <ul>
+                    <li><a href="mailto:info@abc.com">info@abc.com</a></li>
+                    <li><a href="tel:9999999999">9999999999</a></li>
+                </ul>
+            </div>
+            <div class="right-header">
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Snapchat</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="flex-container">
+            <div class="left-nav">
+                <h1 align="center">Logo</h1>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="btn1">Services
+                        <div class="btn2">
+                            <a href="">link1</a><br>
+                            <a href="">link2</a><br>
+                            <a href="">link3</a><br>
+                        </div>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <footer>
+        <div class="f1">
+            <img src="assets/images/logo.png" alt="" height="100px" width="300px">
+            <p>The Digital Rainbow is a Website Designing <br> Company Delhi NCR | Bangalore, India, offers <br> a
+                comprehensive range of services.</p>
+                <ul>
+                    <li>On social networks</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </div>
+        <div>
+            <h1>Services</h1>
+        </div>
+        <div>
+            <h1>Services</h1>
+        </div>
+        <div>
+            <h1>Services</h1>
+        </div>
+    </footer>
+</body>
+
+</html>
